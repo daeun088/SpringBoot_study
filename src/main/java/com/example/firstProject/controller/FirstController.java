@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class FirstController {
 
     @GetMapping("/hi")//hi는 URL 주소
-
     public String niceToMeetYou(Model model){
         model.addAttribute("username", "홍팍");
         return "greetings";
